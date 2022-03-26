@@ -28,6 +28,13 @@ public class Orders {
     )
     User user;
     double amount;
+    String shippingAddress;
+    String paymentType;
+    String nameOnCard;
+    String cardNumber;
+    String expiration;
+    String cvv;
+
 
 
 }

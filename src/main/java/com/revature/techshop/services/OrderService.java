@@ -8,8 +8,9 @@ import java.util.List;
 @Service
 public interface OrderService {
     public List<Orders> getAllOrders();
+    public List<Orders> getAllByUsers(int id);
     public Orders getOrderById(int id);
-    public Orders addOrder(Orders order);
+    public Orders addOrder(int id, Orders order);
     public void updateOrder(int id, Orders order);
     public void deleteOrder(int id);
 }

@@ -17,13 +17,17 @@ public class OrdersController {
     public List<Orders> getAllOrders(){
         return orderService.getAllOrders();
     }
+    @GetMapping("orders/+{id}")
+    public List<Orders> getAllByUser(@PathVariable("id") int id){
+        return orderService.getAllByUsers(id);
+    }
     @GetMapping("/orders/{id}")
     public Orders getOrdersById(@PathVariable("id") int id){
         return orderService.getOrderById(id);
     }
-    @PostMapping("/orders")
-    public Orders addOrder(@RequestBody Orders orders){
-        return orderService.addOrder(orders);
+    @PostMapping("/orders/{id}")
+    public Orders addOrder(@RequestBody Orders orders, @PathVariable("id") int id){
+        return orderService.addOrder(id,orders);
     }
     @PutMapping("/orders/{id}")
     public String updateOrders(@PathVariable("id") int id, @RequestBody Orders order){
