@@ -56,6 +56,12 @@ In order to use this project you just need to run both repositories, first one i
 
 All you need to used this app is both repositories running and then visit localhost:4200 to use it. Also make sure that the config.yml file in the resource folder of the backend has the information for the port and database configuration.
 
+![image](https://user-images.githubusercontent.com/93681341/160408645-5773148e-41c2-46ee-b260-80262dc9c575.png)
+
+
+![image](https://user-images.githubusercontent.com/93681341/160408556-2fe76118-9784-48a2-90f4-ac2adac91c47.png)
+
+
 ## Contributors
 Angeudy Brisita Perez
 Jeffrey L. Espana
